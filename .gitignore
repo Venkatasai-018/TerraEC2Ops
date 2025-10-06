@@ -7,9 +7,11 @@
 
 # Ignore Terraform lock file (optional — include if you want reproducible builds)
 .terraform.lock.hcl
+Ec2Auto_StartStop_Schedular/.terraform.lock.hcl
 
 # Ignore SSH keys (auto-generated or manually created)
 **/keys/
+**/keys/auto
 **/keys/auto.*
 *.pem
 *.pub
