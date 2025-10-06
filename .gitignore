@@ -8,9 +8,11 @@
 *.tfstate.*
 
 
+**/.terraform.lock.hcl
+**/keys
 
-Ec2Auto_StartStop_Schedular/.terraform.lock.hcl
-Ec2Auto_StartStop_Schedular/keys
+
+
 # Crash log files
 crash.log
 crash.*.log
