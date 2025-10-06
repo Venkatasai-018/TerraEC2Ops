@@ -1,10 +1,16 @@
 # Local .terraform directories
 .terraform/
 
+**/.terraform
+**/keys/auto.*
 # .tfstate files
 *.tfstate
 *.tfstate.*
 
+
+
+Ec2Auto_StartStop_Schedular/.terraform.lock.hcl
+Ec2Auto_StartStop_Schedular/keys
 # Crash log files
 crash.log
 crash.*.log
