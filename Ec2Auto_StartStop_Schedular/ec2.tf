@@ -44,7 +44,7 @@ resource "aws_security_group" "autosg" {
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
-  name = "AutoEC2"
+  name = var.ec2name
 
   instance_type = "t2.micro"
   key_name      = aws_key_pair.auto.key_name
