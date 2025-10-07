@@ -11,7 +11,7 @@ resource "aws_iam_role" "lambda_role" {
         Effect = "Allow"
         Sid    = ""
         Principal = {
-          Service = "ec2.amazonaws.com"
+          Service = "lambda.amazonaws.com"
         }
       },
     ]
@@ -77,7 +77,7 @@ resource "aws_lambda_function" "stopec2" {
 # Lambda function
 resource "aws_lambda_function" "startec2" {
   filename         = data.archive_file.start_ec2_lambda.output_path
-  function_name    = "stopec2"
+  function_name    = "startec2"
   role             = aws_iam_role.lambda_role.arn
   handler          = "index.handler"
   source_code_hash = data.archive_file.start_ec2_lambda.output_base64sha256
